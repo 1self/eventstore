@@ -5,6 +5,8 @@ var processor = require('../processor');
 describe('eventstore node module', function () {
   it('must have at least one test', function () {
   	var event = { property: "property"};
+  	event.eventDateTime = {$date: new Date().toISOString()};
+  	event.eventLocalDateTime = {$date: new Date().toISOString()};
   	var writtenEvent;
 
   	var eventRepository = {};

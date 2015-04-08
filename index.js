@@ -84,7 +84,7 @@ MongoClient.connect(url, function(err) {
 	}
 
 	redisClient.on('message', function(channel, message){
-		processor.process(channel, message, eventRepository);
+		processor.process(channel, JSON.parse(message), eventRepository);
 	});
 });
 

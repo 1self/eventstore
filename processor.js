@@ -12,10 +12,7 @@ console.log(winston.transports.Console.toString());
 
 winston.debug('Debug messages will be logged in processor');
 
-
-var process = function(channel, message, eventRepository){
-	var event = JSON.parse(message);
-
+var process = function(channel, event, eventRepository){
 	// eas: we need to do this to copy what the event platform does - there is a custom $date
 	// formatter in the event platform that converts the dates
 	event.eventDateTime = new Date(event.eventDateTime.$date);
