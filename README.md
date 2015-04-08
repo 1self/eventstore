@@ -1,22 +1,3 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-
-> 1self eventstore
-
-
-## Install
-
-```sh
-$ npm install --save eventstore
-```
-
-
-## Usage
-
-```js
-var eventstore = require('eventstore');
-
-eventstore('Rainbow');
-```
 
 
 ## License
@@ -30,3 +11,7 @@ MIT © [ed sykes]()
 [travis-url]: https://travis-ci.org/edsykes/eventstore
 [daviddm-image]: https://david-dm.org/edsykes/eventstore.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/edsykes/eventstore
+=======
+# eventstore
+takes events from a redis queue and puts them in the db
+>>>>>>> d9e6c06b8b9884ebcea7d8c21d6617016ef4387a
